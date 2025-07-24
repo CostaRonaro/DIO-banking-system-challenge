@@ -54,13 +54,13 @@ while True:
         print("Extrato")
         if balance > 0:
             extract = f"""
-            \n##### EXTRATO #####
+            \n========= EXTRATO =========
 
             \n{saque_ext}
             \n{deposito_ext}
             \n{balance_ext}
 
-            \n###################
+            \n===========================
             """
             print(extract)
         else:
