@@ -1,7 +1,5 @@
 from typing import Final
-import textwrap
 
-ident = " " * 12
 balance = 0
 WITHDRAW_LIMIT: Final = 3
 withdraw_number = 0
@@ -56,13 +54,13 @@ while True:
         print("Extrato")
         if balance > 0:
             extract = f"""
-            {ident}##### EXTRATO #####
+            \n##### EXTRATO #####
 
-            {textwrap.indent(saque_ext, ident)}
-            {textwrap.indent(deposito_ext, ident)}
-            {ident}{balance_ext}
+            \n{saque_ext}
+            \n{deposito_ext}
+            \n{balance_ext}
 
-            {ident}###################
+            \n###################
             """
             print(extract)
         else:
